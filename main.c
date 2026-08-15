@@ -30,9 +30,9 @@ int main( int argc , char * argv[]){
 	const char *response = 
 		"HTTP/1.1 200 OK \r\n"
 		"Content-Type: text/plain\r\n"
-		"Content-Length: 44\r\n"
+		"Content-Length: 42\r\n"
 		"\r\n"
-		"Hello World of web server from c language \n";
+		"Hello World of web server from c language ";
 	write(client,response,strlen(response));
 	close(client);
 	close(server);
